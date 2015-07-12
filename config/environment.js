@@ -4,7 +4,7 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'techlahoma-shared',
     environment: environment,
-    baseURL: '/techlahoma-shared',
+    baseURL: '/',
     locationType: 'hash',
     EmberENV: {
       FEATURES: {
@@ -18,6 +18,10 @@ module.exports = function(environment) {
       // when it is created
     }
   };
+
+  if (environment === 'production') {
+    ENV.baseURL =  '/techlahoma-shared';
+  }
 
   if (environment === 'development') {
     // ENV.APP.LOG_RESOLVER = true;
