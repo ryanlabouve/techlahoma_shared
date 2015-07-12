@@ -1,0 +1,48 @@
+/******************************************************
+ * IMPORTANT!!!!!
+ *
+ * Styles in this file will be applied to ALL sites
+ * that import the shared style sheet, NOT just this
+ * app.
+ *
+ * You should look in app/styles for the style sheets
+ * for just this app.
+ * ***************************************************/
+.techlahoma {
+  font-family: sans-serif;
+  line-height: 2em; }
+  .techlahoma code {
+    background: #dedede;
+    padding: 5px;
+    border-radius: 6px; }
+  .techlahoma pre code {
+    display: block;
+    line-height: 1.5em; }
+  .techlahoma header.techlahoma-header-bar {
+    background: black;
+    padding: 10px;
+    color: white; }
+    .techlahoma header.techlahoma-header-bar .container {
+      margin: 0 auto; }
+    .techlahoma header.techlahoma-header-bar a {
+      color: #dedede; }
+      .techlahoma header.techlahoma-header-bar a:hover {
+        color: white; }
+  .techlahoma .techlahoma-title {
+    vertical-align: middle;
+    font-size: 18px;
+    display: inline-block;
+    text-decoration: none; }
+  .techlahoma .techlahoma-logo {
+    background: transparent url("/techlahoma_logo.png") 0 0 no-repeat;
+    width: 145px;
+    height: 40px;
+    display: inline-block;
+    vertical-align: middle;
+    text-indent: 100%;
+    /* get out of the window */
+    white-space: nowrap;
+    /* don't come back in */
+    overflow: hidden;
+    /* no really, don't come back in */
+    /* See more at: http://www.appnovation.com/blog/modern-approach-css-image-replacement */ }
