@@ -13,6 +13,22 @@
 .techlahoma{
 
   font-family:sans-serif;
+  line-height:2em;
+
+
+
+  code{
+    background:#dedede;
+    padding:5px;
+    border-radius:6px;
+  }
+
+  pre code{
+    display:block;
+    line-height:1.5em;
+  }
+
+
 
   header.techlahoma-header-bar{
     background:black;

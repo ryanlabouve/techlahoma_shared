@@ -1,1 +1,58 @@
+<h2>Style Guide</h2>
+
+<h3>Including the styles</h3>
+
+<p>
+  You can include the styles directly from this site by including
+  this tag on your page.
+</p>
+
+<pre><code>
+  &lt;link rel="stylesheet"
+    href="http://shared.techlahoma.com/shared/techlahoma.css"&gt;
+
+</code></pre>
+
+<h3>Opting in to the styles</h3>
+
+<p>
+  In an effort to not completely clobber existing styles on a page
+  all of our styles are namespaced within a <code>techlahoma</code>
+  outter class. This means that only elements inside of a parent with
+  a class of <code>techlahoma</code> will be styled.
+</p>
+
+<p>
+  For official sites the easiest way to opt in is to add the
+  <code>techlahoma</code> class to the body of the page.
+</p>
+
+<pre><code>
+  ...
+  &lt;body class='techlahoma'&gt;
+    ...
+  &lt;/body&gt;
+  ...
+
+</code></pre>
+
+
+
+<h3>Style Examples</h3>
+
+<p>
+This is normal paragraph text. How about we make this paragraph
+pretty long so that it has to wrap onto a few lines so you can
+see how the line spacing looks.
+</p>
+
+<p>
+And here's a paragraph to follow the previous one.
+</p>
+
+<h1>This is an H1</h1>
+<h2>This is an H2</h2>
+<h3>This is an H3</h3>
+<h4>This is an H4</h4>
+
 {{outlet}}
