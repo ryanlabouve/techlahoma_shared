@@ -1,0 +1,26 @@
+/******************************************************
+ * IMPORTANT!!!!!
+ *
+ * Styles in this file will only be applied to this
+ * app itself, NOT to the shared Techlahoma styles.
+ *
+ * You should look in app-shared/styles for the shared
+ * style sheets.
+ * ***************************************************/
+
+body{
+  margin:0px;
+  padding:0px;
+}
+
+.app-container{
+  max-width:600px;
+  margin:0 auto;
+}
+
+.app-disclaimer{
+  background:#ffdede;
+  padding:10px;
+  border-radius:10px;
+  margin:20px auto;
+}
