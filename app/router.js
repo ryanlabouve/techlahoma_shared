@@ -6,6 +6,9 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('official-sites');
+  this.route('affiliated-sites');
+  this.route('style-guide');
 });
 
 export default Router;
