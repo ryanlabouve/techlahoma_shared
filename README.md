@@ -1,7 +1,16 @@
 # Techlahoma-shared
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+A project to develop and distribute assets that can be shared among
+all official techlahoma sites and participating user group sites.
+
+## Developing on this project
+
+There are essentially two parts to this project. The publicly shared
+bits, and then the parts that only apply to the documentation app.
+
+All of the stuff for wider distribution lives in `app-shared`.
+
+All of the stuff that's particular to this app lives in `app`.
 
 ## Prerequisites
 
