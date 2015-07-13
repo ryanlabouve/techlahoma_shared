@@ -9,6 +9,7 @@ Router.map(function() {
   this.route('official-sites');
   this.route('affiliated-sites');
   this.route('style-guide');
+  this.route('techlahoma-tab');
 });
 
 export default Router;

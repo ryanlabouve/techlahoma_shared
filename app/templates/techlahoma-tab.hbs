@@ -1,0 +1,61 @@
+<h2>Techlahoma Tab</h2>
+
+<p>
+  The Techlahoma Tab is a small piece of UI that can be dropped onto a site that renders a
+  small tab with a Techlahoma logo. When clicked the tab expands to show a list of sites
+  affiliated with Techlahoma.
+</p>
+
+<p>
+  You can see a demo of the Techlahoma Tab at the bottom of this page.
+</p>
+
+<h3>Including the tab</h3>
+
+<pre><code>
+  &lt;script src="http://shared.techlahoma.org/shared/techlahoma-tab.js"&gt;
+  &lt;/script&gt;
+
+</code></pre>
+
+<h3>Initializing the tab</h3>
+
+<p>
+  The simplest way to initialize the tab is by just calling <code>init</code>
+  with no arguments.
+</p>
+
+<pre><code>
+  TechlahomaTab.init();
+
+</code></pre>
+
+<p>You can also pass in a configuration object.</p>
+
+<pre><code>
+  TechlahomaTab.init({
+    element : document.getElementById('myElement')
+  });
+
+</code></pre>
+
+<p>
+  The <code>element</code> parameter decides where the tab is appended. The default
+  value is <code>document.body</code>.
+
+</p>
+
+
+<h3>All in one embed script</h3>
+
+<pre><code>
+  &lt;script src="http://shared.techlahoma.org/shared/techlahoma-tab.js"&gt;
+  &lt;/script&gt;
+  &lt;script type="text/javascript"&gt;
+    TechlahomaTab.init();
+  &lt;/script&gt;
+
+</code></pre>
+
+
+{{outlet}}
