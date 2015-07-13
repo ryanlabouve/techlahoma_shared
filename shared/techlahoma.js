@@ -12,12 +12,8 @@ var TechlahomaTab = {
 
   alterDom : function(){
     console.log('alterDom');
-    var para = document.createElement("p");
-    var node = document.createTextNode("This is new.");
-    para.appendChild(node);
 
     var element = document.getElementsByTagName("body")[0];
-    element.appendChild(para);
 
     var div = document.createElement("div");
     div.innerHTML = TechlahomaTab.content;
@@ -33,13 +29,17 @@ var TechlahomaTab = {
 
   content : ' \
     <div id="techlahoma-tab"> \
-      This is the tab! \
+      This is the Techlahoma tab! \
     </div> \
   ',
 
   styles : ' \
     #techlahoma-tab{ \
+      padding: 10px; \
       border: 1px solid red; \
+      position:fixed; \
+      bottom: 0px; \
+      left: 30px; \
     } \
   '
 
