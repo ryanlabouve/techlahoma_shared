@@ -19,7 +19,6 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "broccoli-asset-rev": "^2.0.2",
     "broccoli-es6modules": "^1.0.1",
     "broccoli-funnel": "^0.2.3",
     "broccoli-merge-trees": "^0.2.1",
