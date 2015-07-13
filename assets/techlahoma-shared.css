@@ -1,1 +1,1 @@
-body{margin:0;padding:0}.app-container{max-width:600px;margin:0 auto}.app-disclaimer{background:#ffdede;padding:10px 20px;border-radius:6px;margin:20px auto}
+body{margin:0;padding:0}.app-container{max-width:600px;padding:0 15px;margin:0 auto}.app-container.main{padding-bottom:70px}.app-disclaimer{background:#ffdede;padding:10px 20px;border-radius:6px;margin:20px auto}
