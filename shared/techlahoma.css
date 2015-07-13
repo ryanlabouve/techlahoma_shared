@@ -34,7 +34,7 @@
     display: inline-block;
     text-decoration: none; }
   .techlahoma .techlahoma-logo {
-    background: transparent url("techlahoma_logo.png") 0 0 no-repeat;
+    background: transparent url("../techlahoma_logo.png") 0 0 no-repeat;
     width: 145px;
     height: 40px;
     display: inline-block;
