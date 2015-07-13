@@ -2,7 +2,11 @@
 
 var EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
-var app = new EmberApp();
+var app = new EmberApp({
+  fingerprint: {
+    enabled: false // not the best in the long term, but works for now
+  }
+});
 
 
 var mergeTrees = require('broccoli-merge-trees');
