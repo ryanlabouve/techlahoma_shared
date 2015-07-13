@@ -20,7 +20,8 @@ module.exports = function(environment) {
   };
 
   if (environment === 'production') {
-    ENV.baseURL =  '/techlahoma-shared';
+    // Use this to deploy it at techlahoma.github.io/techlahoma-shared
+    //ENV.baseURL =  '/techlahoma-shared';
   }
 
   if (environment === 'development') {
