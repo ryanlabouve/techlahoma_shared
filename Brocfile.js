@@ -12,6 +12,7 @@ var app = new EmberApp({
 var mergeTrees = require('broccoli-merge-trees');
 var pickFiles = require('broccoli-funnel');
 var compileSass = require('broccoli-sass');
+var ES6Modules = require('broccoli-es6modules');
 
 var tabCss = compileSass(['app-shared'],
                           'styles/techlahoma-tab.scss',
@@ -22,10 +23,31 @@ var sharedCss = compileSass(['app-shared'],
                           'shared/techlahoma.css');
 
 
-var tabJs = pickFiles('app-shared/scripts', {
+
+/*var tabJs = pickFiles('app-shared/scripts', {
   destDir: 'shared',
   files  : ['techlahoma-tab.js']
+});*/
+
+var tabJs = new ES6Modules('app-shared/scripts', {
+  format: 'umd',
+  bundleOptions: {
+    entry: 'techlahoma-tab.js',
+    name: 'TechlahomaTab'
+  }
 });
+
+//console.log('!!!!!!!!!!!!!!!!!!!!!!!!!!11111')
+//console.log(tabJs);
+
+tabJs = pickFiles(tabJs,{
+  files : ['TechlahomaTab.js'],
+  destDir : 'shared'
+});
+
+//console.log('!!!!!!!!!!!!!!!!!!!!!!!!!!22222')
+//console.log(tabJs);
+
 
 // Use `app.import` to add additional libraries to the generated
 // output files.
