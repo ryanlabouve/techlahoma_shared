@@ -13,11 +13,18 @@ var mergeTrees = require('broccoli-merge-trees');
 var pickFiles = require('broccoli-funnel');
 var compileSass = require('broccoli-sass');
 
-var appCss = compileSass(['app-shared'], 'styles/techlahoma.scss', 'shared/techlahoma.css');
+var tabCss = compileSass(['app-shared'],
+                          'styles/techlahoma-tab.scss',
+                          'shared/techlahoma-tab.css');
 
-var sharedFiles = pickFiles('app-shared', {
+var sharedCss = compileSass(['app-shared'],
+                          'styles/techlahoma.scss',
+                          'shared/techlahoma.css');
+
+
+var tabJs = pickFiles('app-shared/scripts', {
   destDir: 'shared',
-  files  : ['techlahoma.js']
+  files  : ['techlahoma-tab.js']
 });
 
 // Use `app.import` to add additional libraries to the generated
@@ -33,4 +40,4 @@ var sharedFiles = pickFiles('app-shared', {
 // please specify an object with the list of modules as keys
 // along with the exports of each module as its value.
 
-module.exports = mergeTrees([app.toTree(),sharedFiles,appCss]);
+module.exports = mergeTrees([app.toTree(),tabCss,sharedCss,tabJs]);
