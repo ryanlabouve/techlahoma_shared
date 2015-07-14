@@ -20,7 +20,9 @@ var TechlahomaTab = {
 
   distributionPoint : function(){
     // dirty hack
-    if(document.location.hostname=='localhost'){
+    // TODO: Figure out how to read the env config from this file
+    var localDev = false;
+    if(localDev){
       return 'http://localhost:4200';
     }else{
       return 'http://shared.techlahoma.org';
