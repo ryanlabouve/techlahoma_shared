@@ -1,0 +1,33 @@
+#techlahoma-tab-wrap {
+  font-family: sans-serif;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: 10;
+  text-align: left; }
+  #techlahoma-tab-wrap #techlahoma-tab {
+    padding: 10px 10px 0;
+    background: black;
+    border: 1px solid white;
+    border-bottom: 0;
+    margin-left: 30px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    display: inline-block; }
+  #techlahoma-tab-wrap #techlahoma-tab-content {
+    width: 100%;
+    background: white;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 0px 30px;
+    height: auto;
+    max-height: 0px;
+    -webkit-transition: max-height 0.8s;
+    -moz-transition: max-height 0.8s;
+    transition: max-height 0.8s; }
+    #techlahoma-tab-wrap #techlahoma-tab-content.active {
+      /* If the tab animation feels janky it probably means that this value is too large */
+      max-height: 86px; }
+    #techlahoma-tab-wrap #techlahoma-tab-content a {
+      color: blue; }
