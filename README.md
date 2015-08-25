@@ -3,6 +3,8 @@
 A project to develop and distribute assets that can be shared among
 all official techlahoma sites and participating user group sites.
 
+<http://shared.techlahoma.org/>
+
 ## Developing on this project
 
 There are essentially two parts to this project. The publicly shared
