@@ -65,4 +65,38 @@
     /* See more at: http://www.appnovation.com/blog/modern-approach-css-image-replacement */
   }
 
+
+  h1{
+    background: transparent url('../double-lines.png') 100% 100% no-repeat;
+    padding-bottom:35px;
+  }
+
+  h2{
+    background: transparent url('../single-line.png') 100% 100% no-repeat;
+    padding-bottom:10px;
+  }
+
+  h3{
+    background: transparent url('../single-grey-line.png') 100% 100% no-repeat;
+    padding-bottom:10px;
+  }
+
+  h4{
+    background: transparent url('../single-light-grey-line.png') 100% 100% no-repeat;
+    padding-bottom:10px;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  ul li {
+    background: transparent url('../smaller-bullet.png') 12px 8px no-repeat;
+    padding-top:0px;
+    padding-left:40px;
+    padding-bottom:10px;
+  }
+
 }
