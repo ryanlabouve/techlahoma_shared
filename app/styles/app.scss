@@ -13,21 +13,27 @@ body{
   padding:0px;
 }
 
-.app-container{
-  max-width:600px;
-  padding:0 15px;
-  margin:0 auto;
-  &.main{
-    padding-bottom:70px;
+.techlahoma{ /* so that we get more specificity */
+
+  .app-container{
+    max-width:600px;
+    padding:0 15px;
+    margin:0 auto;
+    &.main{
+      padding-bottom:70px;
+    }
   }
+
+  .app-disclaimer{
+    background:#ffdede;
+    padding:10px 20px;
+    border-radius:6px;
+    margin:20px auto;
+
+    h3{
+      background: transparent;
+      background-image: none;
+    }
+  }
+
 }
-
-.app-disclaimer{
-  background:#ffdede;
-  padding:10px 20px;
-  border-radius:6px;
-  margin:20px auto;
-}
-
-
-
