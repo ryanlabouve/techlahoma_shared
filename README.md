@@ -52,7 +52,13 @@ Make use of the many generators for code, try `ember help generate` for more det
 
 ### Deploying
 
-Specify what it takes to deploy your app.
+This project uses <https://github.com/poetic/ember-cli-github-pages> for
+deployment.
+
+```
+git checkout master
+ember github-pages:commit --message "Deploy message"
+```
 
 ## Further Reading / Useful Links
 
