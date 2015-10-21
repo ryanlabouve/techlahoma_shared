@@ -8,7 +8,6 @@ var app = new EmberApp({
   }
 });
 
-
 var mergeTrees = require('broccoli-merge-trees');
 var pickFiles = require('broccoli-funnel');
 var compileSass = require('broccoli-sass');
@@ -18,11 +17,43 @@ var tabCss = compileSass(['app-shared'],
                           'styles/techlahoma-tab.scss',
                           'shared/techlahoma-tab.css');
 
-var sharedCss = compileSass(['app-shared'],
-                          'styles/techlahoma.scss',
-                          'shared/techlahoma.css');
+
+// CSS Plugins
+var Funnel = require('broccoli-funnel');
+var postcss = require('broccoli-postcss');
+var cssnext = require('broccoli-cssnext');
+
+// Method 1
+// var cssOptions = {
+//   plugins: [
+//     require("postcss-nested")
+//   ]
+// };
+
+// var sharedCss = Funnel(cssnext('app-shared/styles/', cssOptions), {
+//   destDir: '/asdf'
+// });
 
 
+// Method 2
+var cssPlugins = [
+  {
+    module: require("postcss-nested")
+  },
+  {
+    module: require('cssnext'),
+    options: {
+      browsers: ['last 2 version']
+    }
+  }
+];
+
+var compiledCss = postcss(['app-shared/styles'], 'techlahoma.css', 'techlahoma.css', cssPlugins, { inline: false });
+
+var sharedCss = Funnel(compiledCss, {
+  destDir: '/asdf'
+})
+console.log(sharedCss);
 
 /*var tabJs = pickFiles('app-shared/scripts', {
   destDir: 'shared',
